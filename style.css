@@ -50,6 +50,9 @@ form {
 }
 
 .wynik {
+    border: solid 2px white;
+    width: 200px;
+    height: 100px;
     color: white;
 }
 

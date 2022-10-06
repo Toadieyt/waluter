@@ -17,21 +17,28 @@
             <input type="radio" name="waluta" value="1" checked>dolar amerykański<br>
             <input type="radio" name="waluta" value="2">euro<br><br><br>
             <input type="submit" value="PRZELICZ" class="button-input">
-        </form>
-            <? php
-                ($_POST['waluta'] == 1)
-                {
-                $przelicznik = 3.3373;
-                }
+            
+            <?php
 
-                if($_POST['waluta'] == 2)
-                {
-                $przelicznik = 4.0399;
-                }
-                $wynik = $_POST['kwota']*$przelicznik;
-                echo $wynik;
-            ?>      
+            if($_POST['waluta'] == 1)
+            {
+            $przelicznik = 3.3373;
+            $wynik = $_POST['kwota']*$przelicznik;
+            echo "<br><br>WYNIK TO :  ".$wynik." DOLARÓW";
+            }
+
+            if($_POST['waluta'] == 2)
+            {
+            $przelicznik = 4.0399;
+            $wynik = $_POST['kwota']*$przelicznik;
+            echo "<br><br>WYNIK TO :  ".$wynik." EURO";
+
+            }
+            
+            ?>  
+
+        </form> 
     </main>
-    <footer> <p>©Dawid Ślusarczyk 2022</p></footer>
+    <footer> <p>©Dawid Ślusarczyk 2022</p> </footer>
 </body>
 </html>
