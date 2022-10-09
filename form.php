@@ -22,14 +22,14 @@
 
             if($_POST['waluta'] == 1)
             {
-            $przelicznik = 3.3373;
+            $przelicznik = 4.98;
             $wynik = $_POST['kwota']*$przelicznik;
             echo "<br><br>WYNIK TO :  ".$wynik." DOLARÓW";
             }
 
             if($_POST['waluta'] == 2)
             {
-            $przelicznik = 4.0399;
+            $przelicznik = 4.86;
             $wynik = $_POST['kwota']*$przelicznik;
             echo "<br><br>WYNIK TO :  ".$wynik." EURO";
 
